@@ -79,9 +79,9 @@ Proyek ini dikerjakan oleh tim mahasiswa **STT Terpadu Nurul Fikri (Angkatan 202
 
 | No | Nama Lengkap | NIM |
 | :---: | :--- | :--- |
-| 1 | **Muhammad Rizqi Nurrohmat** | 0110224001 |
-| 2 | **Adzani Naufaldo Arifuddin** | 0110224119 |
-| 3 | **Al Hijir** | 0110224222 |
+| 1 | **Adzani Naufaldo Arifuddin** | 0110224119 |
+| 2 | **Al Hiji** | 0110224222 |
+| 3 | **Muhammad Rizqi Nurrohmat** | 0110224001 |
 | 4 | **Salsabila** | 0110224031 |
 | 5 | **Yanti Elnaya Putri** | 0110224097 |
 
