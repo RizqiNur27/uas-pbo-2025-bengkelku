@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +46,7 @@
 
         <!-- Navbar Start -->
         <nav id="navbar" class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <a href="index.jsp" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
                 <h2 class="m-0 text-primary"><i class="fa fa-car me-3"></i>BengkelKu</h2>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -53,7 +54,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
+                    <a href="index.jsp" class="nav-item nav-link active">Beranda</a>
                     <a href="#about" class="nav-item nav-link">Tentang Kami</a>
                     <a href="#service1" class="nav-item nav-link">Layanan</a>
                     <div class="nav-item dropdown">
@@ -575,7 +576,7 @@
                     <div class="copyright">
                         <div class="row">
                             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <a class="border-bottom" href="index.html">BengkelKu</a> | PBO 2025.
+                                &copy; <a class="border-bottom" href="index.jsp">BengkelKu</a> | PBO 2025.
 
                             </div>
                         </div>

@@ -26,7 +26,7 @@
         <div class="container position-relative">
             <h1 class="fw-bold mb-2">Reservasi Servis Mobil</h1>
             <p class="opacity-75 mb-4 lead">Solusi perawatan kendaraan profesional tanpa antre lama</p>
-            <a href="index.html" class="btn btn-sm btn-outline-light rounded-pill px-4 py-2">
+            <a href="index.jsp" class="btn btn-sm btn-outline-light rounded-pill px-4 py-2">
                 <i class="fas fa-arrow-left me-1"></i> Kembali ke Beranda
             </a>
         </div>
@@ -259,7 +259,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     // Redirect ke index atau halaman lain
-                    window.location.href = 'index.html';
+                    window.location.href = 'index.jsp';
                 }
             });
         }

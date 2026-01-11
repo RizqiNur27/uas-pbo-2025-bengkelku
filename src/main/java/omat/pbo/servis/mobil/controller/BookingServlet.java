@@ -190,7 +190,7 @@ public class BookingServlet extends HttpServlet {
                 if (bookingDao.createBooking(b, serviceIds)) {
                     // Sukses
                     session.setAttribute("swal_success", "Order berhasil dibuat!");
-                    String target = "add_online".equals(action) ? "index.html" : "BookingServlet?action=list";
+                    String target = "add_online".equals(action) ? "index.jsp" : "BookingServlet?action=list";
                     response.sendRedirect(target);
                 } else {
                     // Gagal di DAO
