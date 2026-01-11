@@ -10,15 +10,26 @@
 
 ## 📋 Fitur Utama
 
-### 👤 Halaman Pelanggan (User)
-* **Reservasi Online:** Booking jadwal servis tanpa harus antre manual.
-* **Informasi Layanan:** Melihat daftar layanan servis yang tersedia.
-* **Cek Status:** Melihat riwayat atau status booking.
+### 🏠 Halaman Utama (Landing Page)
+Halaman depan yang berfungsi sebagai pusat informasi dan navigasi utama:
+* **Navigasi Akses:**
+    * **Reservasi Online:** Tombol khusus untuk **Pelanggan** memulai proses booking servis.
+    * **Login Admin:** Tombol akses khusus **Admin** yang terletak di **pojok kanan atas** halaman.
+* **Informasi Lengkap:** Menampilkan profil bengkel, daftar layanan, tim mekanik, serta testimoni pelanggan.
 
-### 🛠 Halaman Admin
-* **Login Admin:** Keamanan akses untuk pengelolaan data.
-* **Manajemen Reservasi:** Melihat, menyetujui, atau menolak reservasi masuk.
-* **CRUD Data:** Mengelola data pelanggan, jenis servis, dan laporan.
+### 👤 Halaman Pelanggan (User)
+* **Form Reservasi:** Mengisi data diri, memilih jenis servis, tanggal, dan metode pembayaran.
+* **Informasi Layanan:** Melihat detail diagnosa kerusakan dan estimasi pengerjaan.
+* **Cek Status:** Memantau riwayat booking apakah sudah disetujui atau belum.
+
+### 🛠 Halaman Admin (Dashboard)
+Pusat kontrol pengelolaan bengkel dengan tampilan antarmuka yang responsif:
+* **Dashboard Overview:** Menampilkan kartu statistik ringkas (Total Reservasi, Jumlah Mekanik, Data Pelanggan) untuk pemantauan cepat.
+* **Manajemen Reservasi:** Tabel daftar booking masuk dengan fitur konfirmasi (Setujui/Tolak) reservasi.
+* **Kelola Data Master (CRUD):**
+    * Menambah dan mengedit data **Mekanik**.
+    * Mengupdate daftar dan harga **Jenis Layanan**.
+    * Mengelola data **Pelanggan** terdaftar.
 
 ---
 
@@ -61,8 +72,8 @@ Ikuti langkah-langkah ini untuk menjalankan aplikasi di komputer lokal:
     ```java
     // Contoh konfigurasi di KoneksiDB.java
     String url = "jdbc:postgresql://localhost:5432/pbo_servis_mobil";
-    String user = "postgres";      // Ganti dengan username pgAdmin
-    String pass = "password_kamu"; // Ganti dengan password pgAdmin
+    String user = "postgres";      // Ganti dengan username pgAdmin kamu
+    String pass = "password_kamu"; // Ganti dengan password pgAdmin kamu
     ```
 
 ### 3. Run Project
@@ -80,7 +91,7 @@ Proyek ini dikerjakan oleh tim mahasiswa **STT Terpadu Nurul Fikri (Angkatan 202
 | No | Nama Lengkap | NIM |
 | :---: | :--- | :--- |
 | 1 | **Adzani Naufaldo Arifuddin** | 0110224119 |
-| 2 | **Al Hiji** | 0110224222 |
+| 2 | **Al Hijir** | 0110224222 |
 | 3 | **Muhammad Rizqi Nurrohmat** | 0110224001 |
 | 4 | **Salsabila** | 0110224031 |
 | 5 | **Yanti Elnaya Putri** | 0110224097 |
