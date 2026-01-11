@@ -72,8 +72,8 @@ Ikuti langkah-langkah ini untuk menjalankan aplikasi di komputer lokal:
     ```java
     // Contoh konfigurasi di KoneksiDB.java
     String url = "jdbc:postgresql://localhost:5432/pbo_servis_mobil";
-    String user = "postgres";      // Ganti dengan username pgAdmin kamu
-    String pass = "password_kamu"; // Ganti dengan password pgAdmin kamu
+    String user = "postgres";      // Ganti dengan username pgAdmin yang sesuai
+    String pass = "password_kamu"; // Ganti dengan password pgAdmin yang sesuai
     ```
 
 ### 3. Run Project
