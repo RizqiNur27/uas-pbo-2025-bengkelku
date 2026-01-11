@@ -1,0 +1,116 @@
+:root {
+    --primary: #4361ee;
+    --primary-soft: #eff6ff;
+    --bg-app: #f8fafc;
+    --border-color: #e2e8f0;
+}
+body {
+    background-color: var(--bg-app);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    color: #334155;
+}
+
+/* Layout Utama */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card-panel {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    height: 100%;
+}
+.section-header {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* Service Grid Items */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+}
+.service-item {
+    position: relative;
+}
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+.chk-layanan:checked + .service-box {
+    background-color: var(--primary-soft);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+.service-title {
+    font-weight: 600;
+    line-height: 1.3;
+    font-size: 13px;
+}
+.service-price {
+    font-weight: 700;
+    color: #10b981;
+    font-size: 14px;
+    margin-top: auto;
+}
+.icon-check {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--primary);
+    display: none;
+}
+.chk-layanan:checked + .service-box .icon-check {
+    display: block;
+}
+
+/* Floating Footer */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid var(--border-color);
+    padding: 15px 0;
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 600;
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+.form-control, .form-select {
+    border-radius: 8px;
+    border-color: #cbd5e1;
+    font-size: 13.5px;
+    padding: 10px;
+}
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}

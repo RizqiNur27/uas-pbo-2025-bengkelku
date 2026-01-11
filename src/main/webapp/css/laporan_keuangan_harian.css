@@ -1,0 +1,89 @@
+:root {
+    --primary: #4f46e5;
+    --secondary: #64748b;
+    --success: #10b981;
+}
+body {
+    background-color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 30px;
+    color: #1e293b;
+}
+
+/* Kertas A4 Landscape */
+.sheet {
+    background: white;
+    width: 297mm;
+    min-height: 210mm;
+    margin: 0 auto;
+    padding: 15mm;
+    border-radius: 8px;
+}
+
+.kop-section {
+    border-bottom: 3px solid #334155;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.brand {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.report-table th {
+    background: #f8fafc;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+}
+.report-table td {
+    padding: 10px;
+    font-size: 11px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+}
+
+.badge-info {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-weight: 700;
+}
+.admin-note {
+    font-size: 10px;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* Print Configuration */
+@media print {
+    @page {
+        size: landscape;
+        margin: 5mm;
+    }
+    .no-print {
+        display: none !important;
+    }
+    .sheet {
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+    body {
+        background: white;
+        padding: 0;
+    }
+    /* Memastikan background warna tercetak (Chrome/Edge option) */
+    -webkit-print-color-adjust: exact;
+}

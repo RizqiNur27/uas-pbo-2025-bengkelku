@@ -1,0 +1,359 @@
+/********** Template CSS - BLUE **********/
+
+:root {
+    --primary: #007bff !important;
+    --secondary: #002D62 !important;
+    --light: #F8F9FA !important;
+    --dark: #1A1A1A !important;
+}
+
+/* --- Global Styles --- */
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*** Buttons ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3 !important;
+    border-color: #004a99 !important;
+}
+
+.btn-secondary {
+    color: #FFFFFF !important;
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*** Header & Carousel ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 45, 98, .7); 
+    z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+/*** Special Sections (Facts, Booking, Footer) ***/
+.fact, .booking, .footer {
+    position: relative;
+    background: linear-gradient(rgba(0, 45, 98, .85), rgba(0, 45, 98, .85)), url(../img/carousel-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** Service Section ***/
+.service .nav .nav-link {
+    background: var(--light);
+    transition: .5s;
+    border: 1px solid #dee2e6;
+}
+
+.service .nav .nav-link.active {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.service .nav .nav-link.active h4 {
+    color: #FFFFFF !important;
+}
+
+/*** Team Section ***/
+.team-item .team-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 123, 255, .9);
+    transform: scale(0);
+    transition: .5s;
+}
+
+.team-item:hover .team-overlay {
+    transform: scale(1);
+}
+
+.team-item .team-overlay .btn {
+    color: var(--primary);
+    background: #FFFFFF;
+}
+
+.team-item .team-overlay .btn:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item.center .testimonial-text {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+/*** Footer Social & Links ***/
+.footer .btn.btn-social:hover {
+    color: var(--primary) !important;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary) !important;
+    letter-spacing: 1px;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.fa-car-side, 
+.fa-car, 
+.fa-cog, 
+.fa-oil-can {
+    color: var(--primary) !important;
+}
+
+.fa-car-side:hover, 
+.fa-car:hover, 
+.fa-cog:hover, 
+.fa-oil-can:hover {
+    color: var(--secondary) !important;
+    transform: scale(1.1); 
+    transition: 0.3s;
+}
+
+.fa-cog {
+    transition: transform 0.8s ease-in-out;
+}
+.fa-cog:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
+
+/*** Footer ***/
+.footer .btn-link {
+    display: flex;              
+    align-items: center;      
+    padding: 0;
+    margin-bottom: 12px;        
+    color: #f1f1f1 !important;
+    text-decoration: none;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+.footer .btn-link::before {
+    content: "\f105";        
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 12px;        
+    color: var(--primary);      
+    font-size: 14px;
+}
+
+.footer .btn-link:hover {
+    color: var(--primary) !important;
+    padding-left: 8px;        
+}
+
+/* =========================================
+   FIX FINAL TOMBOL NAVBAR (SESUAI REQUEST)
+   ========================================= */
+
+/* 1. RESET UTAMA: Hapus style kotak raksasa */
+.navbar .custom-btn {
+    height: auto !important;
+    padding: 10px 28px !important;    
+    margin: 0 !important;
+    border-radius: 50px !important;   /* PENTING: Bikin jadi KAPSUL */
+    text-transform: capitalize !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    line-height: 1.5 !important;
+}
+
+/* 2. Tombol LOGIN: Transparan (Garis Biru) */
+.navbar .btn-login {
+    background: transparent !important;
+    border: 2px solid #007bff !important;
+    color: #007bff !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+.navbar .btn-login:hover {
+    background: #007bff !important;
+    color: #fff !important;
+}
+
+/* 3. Tombol RESERVASI: FULL BIRU (Gradient Mewah) */
+/* Ini dibuat biru solid/gradient agar beda dari login */
+.navbar .btn-reservasi {
+    background: linear-gradient(45deg, #007bff, #0056b3) !important; /* Biru Gradasi */
+    border: none !important;
+    color: #fff !important; /* Teks Putih */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4) !important; /* Ada bayangan */
+    text-decoration: none !important;
+}
+
+.navbar .btn-reservasi:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5) !important;
+    color: #fff !important;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 991px) {
+    .d-flex.align-items-center.ms-3.gap-3 {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 15px;
+        padding-bottom: 20px;
+        gap: 15px !important;
+    }
+    
+    .navbar .custom-btn {
+        width: 100%;
+    }
+}
