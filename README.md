@@ -84,9 +84,9 @@ Ikuti langkah-langkah ini untuk menjalankan aplikasi di komputer lokal:
 
 ---
 
-## 👥 Anggota Kelompok
+## 👥 Anggota Kelompok 5 Mata Kuliah Pemograman Berorientasi Objek
 
-Proyek ini dikerjakan oleh tim mahasiswa **STT Terpadu Nurul Fikri (Angkatan 2024)**:
+Proyek ini dikerjakan oleh Mahasiswa **STT Terpadu Nurul Fikri (Angkatan 2024)**:
 
 | No | Nama Lengkap | NIM |
 | :---: | :--- | :--- |
