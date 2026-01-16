@@ -67,7 +67,7 @@ Ikuti langkah-langkah ini untuk menjalankan aplikasi di komputer lokal:
 
 ### 2. Konfigurasi Koneksi
 1.  Buka project di **NetBeans**.
-2.  Cari file koneksi database bernama **`KoneksiDB.java`** (biasanya di package `util` atau `config`).
+2.  Cari file koneksi database bernama **`KoneksiDB.java`** (biasanya di package config`).
 3.  Sesuaikan **Username** dan **Password** database PostgreSQL kamu:
     ```java
     // Contoh konfigurasi di KoneksiDB.java
